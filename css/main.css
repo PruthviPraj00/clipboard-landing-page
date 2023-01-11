@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  width: 100vw;
+}
+
+h1, h2, h3 {
+  color: hsl(210deg, 10%, 33%);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  margin-top: 2rem;
+}
+
+.para {
+  color: hsl(201deg, 11%, 66%);
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 400;
+  width: 650px;
+  margin: 1rem auto;
+  padding: 1px;
+}
+
+header {
+  background-image: url("../images/bg-header-desktop.png");
+  background-size: 100vw 280px;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin: auto 25%;
+}
+.container .mainlogo {
+  display: flex;
+  justify-content: center;
+}
+.container .mainlogo img {
+  margin-top: 10%;
+}
+.container .head-1 {
+  margin-top: 3rem;
+}
+.container .head-2 {
+  margin-top: 8rem;
+}
+
+.btn button {
+  border: none;
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  color: white;
+  border-radius: 50px;
+  background-color: hsl(171deg, 66%, 44%);
+}
+.btn .ios {
+  margin-right: 0.5rem;
+  box-shadow: 0 3px hsl(171deg, 65%, 35%);
+}
+.btn .ios:hover {
+  background-color: #5eccbb;
+  cursor: pointer;
+}
+.btn .mac {
+  margin-left: 0.5rem;
+  background-color: hsl(233deg, 100%, 69%);
+  box-shadow: 0 3px hsl(233deg, 47%, 52%);
+}
+.btn .mac:hover {
+  background-color: #8896ff;
+  cursor: pointer;
+}
+
+main #scroll1 {
+  display: flex;
+  text-align: left;
+  margin-top: 7rem;
+}
+main #scroll1 img {
+  object-fit: cover;
+  position: relative;
+  object-position: -50px;
+}
+main #scroll1 .text-scroll1 {
+  position: relative;
+  left: 5rem;
+}
+main #scroll1 .text-scroll1 .smallhead {
+  margin-top: 3rem;
+}
+main #scroll1 .text-scroll1 .h4-para {
+  width: 340px;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+main #scroll2 {
+  margin: 7rem 25%;
+}
+main #scroll2 img {
+  object-fit: contain;
+  margin-top: 4rem;
+  margin-left: -6rem;
+}
+main #scroll3 {
+  margin: auto 10%;
+  margin-top: -5rem;
+}
+main #scroll3 p {
+  margin-top: 1rem;
+}
+main #scroll3 .card {
+  width: 100%;
+  display: flex;
+  margin-top: 4rem;
+}
+main #scroll3 .card .card-1 {
+  width: 33%;
+}
+main #scroll3 .card .card-2 {
+  margin-top: 0.5rem;
+  width: 33%;
+}
+main #scroll3 .card .card-3 {
+  margin-top: 0.5rem;
+  width: 33%;
+}
+main #scroll3 .card p {
+  width: 350px;
+  margin: 1rem auto;
+  padding: 0;
+}
+main #scroll3 .logo {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+main #scroll3 .logo img {
+  width: 150px;
+  object-fit: contain;
+}
+main #scroll4 {
+  margin: 8rem 25%;
+}
+
+footer {
+  background-color: #f5f6f8;
+}
+footer .footter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 10rem;
+}
+footer .footter .foot-logo img {
+  margin-top: 2rem;
+  width: 50px;
+}
+footer .footter .foot-middle {
+  text-align: left;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  position: relative;
+  right: 70px;
+}
+footer .footter .foot-middle a {
+  text-decoration: none;
+  color: hsl(210deg, 10%, 33%);
+}
+footer .footter .social-logo {
+  margin-top: 2rem;
+}
+footer .footter .social-logo .secondicon {
+  margin: 0 2rem;
+}
+footer .attribution {
+  margin: 0 4rem;
+  font-size: 1rem;
+  text-align: center;
+}
+footer .attribution a {
+  font-family: "Bai Jamjuree", sans-serif;
+  color: hsl(228deg, 45%, 44%);
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  .para {
+    font-size: 0.9rem;
+    width: 300px;
+    margin: 2rem 0;
+    padding: 0;
+  }
+  header {
+    background-image: url("../images/bg-header-mobile.png");
+    background-size: 100vw 280px;
+    background-repeat: no-repeat;
+  }
+  header .container {
+    margin: auto 5%;
+  }
+  header .container .mainlogo img {
+    margin-top: 6rem;
+  }
+  header .container .head-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  header .container .head-1 h1 {
+    font-size: 2rem;
+  }
+  header .container .head-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+  }
+  header .container .head-2 h1 {
+    font-size: 2rem;
+  }
+  .btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn .mac {
+    margin-left: 0;
+  }
+  .btn .ios {
+    margin-right: 0;
+  }
+  main #scroll1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 7rem;
+  }
+  main #scroll1 img {
+    width: 300px;
+    object-fit: contain;
+    position: relative;
+    object-position: 0;
+  }
+  main #scroll1 .text-scroll1 {
+    position: relative;
+    left: 0;
+  }
+  main #scroll1 .text-scroll1 .smallhead {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
+  main #scroll1 .text-scroll1 .h4-para {
+    font-size: 0.9rem;
+    width: 340px;
+    margin: 0;
+    padding: 0.5rem 2rem;
+  }
+  main #scroll2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 5%;
+  }
+  main #scroll2 img {
+    object-fit: contain;
+    width: 350px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  main #scroll3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 5%;
+  }
+  main #scroll3 p {
+    margin-top: 1rem;
+  }
+  main #scroll3 .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  main #scroll3 .card .card-1 {
+    width: 100%;
+  }
+  main #scroll3 .card .card-2 {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  main #scroll3 .card .card-3 {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  main #scroll3 .card p {
+    width: 350px;
+    margin: 1rem auto;
+    padding: 0;
+  }
+  main #scroll3 .logo {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main #scroll3 .logo img {
+    margin-top: 3rem;
+    width: 150px;
+    object-fit: contain;
+  }
+  main #scroll4 {
+    margin: 8rem 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    background-color: #f5f6f8;
+  }
+  footer .footter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 5%;
+  }
+  footer .footter .foot-logo img {
+    margin-top: 2rem;
+    width: 50px;
+  }
+  footer .footter .foot-middle {
+    text-align: center;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    right: 0;
+  }
+  footer .footter .foot-middle a {
+    text-decoration: none;
+    color: hsl(210deg, 10%, 33%);
+  }
+  footer .footter .social-logo {
+    margin-top: 2rem;
+  }
+  footer .footter .social-logo .secondicon {
+    margin: 0 2rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .para {
+    font-size: 1rem;
+    width: 450px;
+    margin: 2rem 0;
+    padding: 0;
+  }
+  header {
+    background-image: url("../images/bg-header-mobile.png");
+    background-size: 100vw 280px;
+    background-repeat: no-repeat;
+  }
+  header .container {
+    margin: auto 5%;
+  }
+  header .container .mainlogo img {
+    margin-top: 6rem;
+  }
+  header .container .head-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  header .container .head-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+  }
+  .btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn .mac {
+    margin-left: 0;
+  }
+  .btn .ios {
+    margin-right: 0;
+  }
+  main #scroll1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 7rem;
+  }
+  main #scroll1 img {
+    width: 600px;
+    object-fit: contain;
+    position: relative;
+    object-position: 0;
+  }
+  main #scroll1 .text-scroll1 {
+    position: relative;
+    left: 0;
+  }
+  main #scroll1 .text-scroll1 .smallhead {
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
+  main #scroll1 .text-scroll1 .h4-para {
+    font-size: 1rem;
+    width: 440px;
+    margin: 0;
+    padding: 0.5rem 2rem;
+  }
+  main #scroll2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 5%;
+  }
+  main #scroll2 img {
+    object-fit: contain;
+    width: 600px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  main #scroll3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 5%;
+  }
+  main #scroll3 p {
+    margin-top: 1rem;
+  }
+  main #scroll3 .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  main #scroll3 .card .card-1 {
+    width: 100%;
+  }
+  main #scroll3 .card .card-2 {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  main #scroll3 .card .card-3 {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  main #scroll3 .card p {
+    width: 350px;
+    margin: 1rem auto;
+    padding: 0;
+  }
+  main #scroll3 .logo {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main #scroll3 .logo img {
+    margin-top: 3rem;
+    width: 150px;
+    object-fit: contain;
+  }
+  main #scroll4 {
+    margin: 8rem 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    background-color: #f5f6f8;
+  }
+  footer .footter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 5%;
+  }
+  footer .footter .foot-logo img {
+    margin-top: 2rem;
+    width: 50px;
+  }
+  footer .footter .foot-middle {
+    text-align: center;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    right: 0;
+  }
+  footer .footter .foot-middle a {
+    text-decoration: none;
+    color: hsl(210deg, 10%, 33%);
+  }
+  footer .footter .social-logo {
+    margin-top: 2rem;
+  }
+  footer .footter .social-logo .secondicon {
+    margin: 0 2rem;
+  }
+}/*# sourceMappingURL=main.css.map */

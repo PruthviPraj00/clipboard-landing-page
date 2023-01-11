@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+$S-Cyan: hsl(171, 66%, 44%);
+$L-Blue: hsl(233, 100%, 69%);
+$D-G-Blue: hsl(210, 10%, 33%);;
+$G-Blue: hsl(201, 11%, 66%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+    width: 100vw;
+    
+}
+
+h1,h2,h3{
+    color: $D-G-Blue ;
+    font-weight: 600;
+    
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+
+h3{
+margin-top: 2rem;
+}
+
+
+
+@mixin textalign ($width, $top, $pad){
+            width: $width;
+            margin: $top;
+            padding: $pad; 
+}
+
+.para{
+color: $G-Blue;
+font-size: 1rem;
+line-height:1.8;
+font-weight: 400;
+@include textalign(650px, 1rem auto , 1px);
+
+}
+
+header{
+    background-image: url("../images/bg-header-desktop.png");
+    background-size: 100vw 280px;
+    background-repeat: no-repeat;
+    
+}
+
+.container{
+    margin: auto 25%;
+    
+    .mainlogo{
+        display: flex;
+        justify-content: center;
+        
+        img{
+            margin-top: 10%;
+        }
+    }
+    .head-1{
+        
+        margin-top: 3rem;
+    }
+    
+    .head-2{
+        margin-top: 8rem;
+      
+ }
+}
+.btn{
+    button{
+           border: none;
+           margin-top: 2rem;
+           padding: .8rem 2rem;
+           font-size: 1rem;
+           font-weight: 500;
+           letter-spacing: .05rem;
+           color: white;
+           border-radius: 50px;
+           background-color:$S-Cyan ;
+           }
+           .ios{
+               margin-right: .5rem;
+               box-shadow: 0 3px hsl(171, 65%, 35%);
+            &:hover{
+                   background-color: #5eccbb;
+                   cursor: pointer;
+               }
+               }
+           
+           .mac{
+               margin-left: .5rem;
+               background-color: $L-Blue;
+               box-shadow: 0 3px  hsl(233, 47%, 52%);
+               &:hover{
+                   background-color: #8896ff;
+                   cursor: pointer;
+               }
+           }
+   }
+
+main{
+   
+   #scroll1{
+    display: flex;
+    text-align: left;
+    margin-top: 7rem;
+    img{
+        object-fit: cover;
+        position: relative;
+        object-position: -50px;
+    }
+    
+    .text-scroll1{
+        
+        position: relative;
+        left: 5rem;
+        
+    .smallhead{
+        margin-top: 3rem
+      }
+    .h4-para{
+            
+            @include textalign(340px, 0, .5rem 0);
+            }
+    }
+}
+
+    #scroll2{
+    margin: 7rem 25%;
+    img{
+        object-fit: contain;
+        margin-top: 4rem;
+        margin-left: -6rem;
+    }
+  
+    
+    }
+
+    #scroll3{
+        margin: auto 10%;
+        margin-top: -5rem;
+        p{
+            margin-top: 1rem;
+        }
+        .card{
+          width: 100%;
+          display:flex;
+          margin-top: 4rem;
+          
+        .card-1{
+            width: 33%;
+            
+        }
+        .card-2{
+            margin-top: .5rem;
+            width: 33%;
+        }
+        .card-3{
+            margin-top: .5rem;
+            width: 33%;
+        }
+        p{
+            @include textalign(350px, 1rem auto , 0);
+        }
+        
+        }
+        .logo{
+            
+            margin-top: 6rem;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            
+            img{
+                width: 150px;
+                object-fit: contain;
+            }
+        }
+    }
+   #scroll4{
+    margin: 8rem 25%;
+    
+   }
+
+}
+
+footer{
+   
+    background-color:#f5f6f8;
+    .footter{
+        display: flex;
+        justify-content: space-between;
+       align-items: center;
+       margin: 2rem 10rem;
+    .foot-logo img{
+            margin-top: 2rem;
+            width: 50px;
+        }
+    .foot-middle{
+        text-align: left;
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        position: relative;
+        right: 70px;
+        a{
+            text-decoration: none;
+            color: $D-G-Blue;
+        }
+        }
+        .social-logo{
+            margin-top: 2rem;
+            .secondicon{
+                margin: 0 2rem;
+             }
+        }
+    }
+    .attribution {margin:0 4rem ; font-size: 1rem; text-align: center;
+        a { font-family: 'Bai Jamjuree', sans-serif;color: hsl(228, 45%, 44%);text-decoration: none;  } }
+   
+    
+}
+
+
+
+@media  only screen and (min-width:375px) and (max-width:425px) {
+
+    @mixin display{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .para{
+        
+        font-size: .9rem;
+        @include textalign(300px,  2rem  0 , 0);
+        
+        }
+    header{
+        background-image: url("../images/bg-header-mobile.png");
+        background-size: 100vw 280px;
+        background-repeat: no-repeat;
+        
+    
+
+    .container{
+        
+        margin: auto 5%;
+    
+    .mainlogo{
+        img{
+            margin-top: 6rem;
+        }
+    }
+    .head-1{
+        @include display;
+        margin-top: 3rem;
+        h1{
+            font-size: 2rem;
+        }
+        
+    }
+    
+    .head-2{
+        @include display;
+        margin-top: 8rem;
+        h1{
+            font-size: 2rem;
+        }
+      
+ }
+}
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .mac{
+        margin-left:0;
+    }
+    .ios{
+        margin-right:0;
+    }
+         
+   }
+
+main{
+   
+   #scroll1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 7rem;
+    
+    img{
+        width: 300px;
+        object-fit: contain;
+        position: relative;
+        object-position: 0;
+    }
+    
+    .text-scroll1{
+        
+        position: relative;
+        left: 0;
+        
+        
+    .smallhead{
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    
+      }
+    .h4-para{
+            font-size: .9rem;
+            @include textalign(340px, 0, .5rem 2rem);
+            }
+    }
+}
+
+    #scroll2{
+        @include display;
+    margin: 7rem 5%;
+    img{
+        object-fit: contain;
+        width: 350px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+  
+    
+    }
+
+    #scroll3{
+        @include display;
+        margin: auto 5%;
+        p{
+            margin-top: 1rem;
+        }
+        .card{
+          width: 100%;
+          @include display;
+          margin-top: 4rem;
+          
+        .card-1{
+            width: 100%;
+            
+        }
+        .card-2{
+            margin-top: 1rem;
+            width: 100%;
+        }
+        .card-3{
+            margin-top: 1rem;
+            width: 100%;
+        }
+        p{
+            @include textalign(350px, 1rem auto , 0);
+        }
+        
+        }
+        .logo{
+            
+            margin-top: 4rem;
+            @include display;
+            
+            img{
+                margin-top: 3rem;
+                width: 150px;
+                object-fit: contain;
+            }
+        }
+    }
+   #scroll4{
+    margin: 8rem 5%;
+    @include display;
+   }
+
+}
+
+footer{
+   
+    background-color:#f5f6f8;
+    .footter{
+        @include display;
+       margin: 2rem 5%;
+    .foot-logo img{
+            margin-top: 2rem;
+            width: 50px;
+        }
+    .foot-middle{
+        text-align: center;
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        right:0;
+        a{
+            text-decoration: none;
+            color: $D-G-Blue;
+        }
+        }
+        .social-logo{
+            margin-top: 2rem;
+            .secondicon{
+                margin: 0 2rem;
+             }
+        }
+    }
+    
+    
+
+}
+}
+
+@media  only screen and (min-width:768px) and (max-width:1024px) {
+    h1{
+        font-size: 2.2rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    @mixin display{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .para{
+        
+        font-size: 1rem;
+        @include textalign(450px,  2rem  0 , 0);
+        
+        }
+    header{
+        background-image: url("../images/bg-header-mobile.png");
+        background-size: 100vw 280px;
+        background-repeat: no-repeat;
+        
+    
+
+    .container{
+        
+        margin: auto 5%;
+    
+    .mainlogo{
+        img{
+            margin-top: 6rem;
+        }
+    }
+    .head-1{
+        @include display;
+        margin-top: 3rem;
+       
+    }
+    
+    .head-2{
+        @include display;
+        margin-top: 8rem;
+      
+      
+ }
+}
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .mac{
+        margin-left:0;
+    }
+    .ios{
+        margin-right:0;
+    }
+         
+   }
+
+main{
+   
+   #scroll1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 7rem;
+    
+    img{
+        width: 600px;
+        object-fit: contain;
+        position: relative;
+        object-position: 0;
+    }
+    
+    .text-scroll1{
+        
+        position: relative;
+        left: 0;
+        
+        
+    .smallhead{
+        margin-top: 3rem;
+        font-size: 2rem;
+    
+      }
+    .h4-para{
+            font-size: 1rem;
+            @include textalign(440px, 0, .5rem 2rem);
+            }
+    }
+}
+
+    #scroll2{
+        @include display;
+    margin: 7rem 5%;
+    img{
+        object-fit: contain;
+        width: 600px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+  
+    
+    }
+
+    #scroll3{
+        @include display;
+        margin: auto 5%;
+        p{
+            margin-top: 1rem;
+        }
+        .card{
+          width: 100%;
+          @include display;
+          margin-top: 2rem;
+          
+        .card-1{
+            width: 100%;
+            
+        }
+        .card-2{
+            margin-top: 1rem;
+            width: 100%;
+        }
+        .card-3{
+            margin-top: 1rem;
+            width: 100%;
+        }
+        p{
+            @include textalign(350px, 1rem auto , 0);
+        }
+        
+        }
+        .logo{
+            
+            margin-top: 4rem;
+            @include display;
+            
+            img{
+                margin-top: 3rem;
+                width: 150px;
+                object-fit: contain;
+            }
+        }
+    }
+   #scroll4{
+    margin: 8rem 5%;
+    @include display;
+   }
+
+}
+
+footer{
+   
+    background-color:#f5f6f8;
+    .footter{
+        @include display;
+       margin: 2rem 5%;
+    .foot-logo img{
+            margin-top: 2rem;
+            width: 50px;
+        }
+    .foot-middle{
+        text-align: center;
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        right:0;
+        a{
+            text-decoration: none;
+            color: $D-G-Blue;
+        }
+        }
+        .social-logo{
+            
+            margin-top: 2rem;
+        
+        .secondicon{
+           margin: 0 2rem;
+        }
+        }
+    }
+    
+  
+}
+}
